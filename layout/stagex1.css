@@ -1,0 +1,121 @@
+	/* body */
+	 body{
+			    background-color: #000000;
+		    }
+	
+
+	/* h3 */
+	h3{
+			    position: relative;
+			    padding: 0 1em;
+			    height: 35px;
+			    line-height: 35px;
+			    color: #fff;			/* Text Color			*/
+			    background: #B92A2C;	/* Background Color 	*/
+			    font-size: 1.0em;		/* Font Size 			*/
+			    font-weight: bold;	    /* Font weight		 	*/
+                font-style: oblique;    /* FOnt Style           */
+                font-family: fantasy;   /* Kaind of Font        */
+		}
+	h3:before,
+	h3:after{
+				content: '';
+				position: absolute;
+				}
+	h3:before{
+				top: 100%;
+				left: 0;
+				border-width: 0 15px 15px 0;
+				border-color: transparent;
+				border-right-color: #808080;		/* Color of Return */
+				}
+	h3:after{
+				top: -8;
+				right: 0;
+				z-index: 2;
+				border-width: 25px 20px;
+				border-style: solid;
+				border-color: transparent;
+				border-right-color: #000;
+			    }
+
+    /* MainContents */
+	#main{
+                float:left;
+		    }
+
+
+	/* Commentarea */
+	#commentarea{
+				position: relative;
+				margin: 10px 15px 5px 5px;
+				padding: 10px 8px 10px 15px;
+				color: #000;			/* Text Color			*/
+				border:4px solid #82636b;
+				border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+				height:40px;
+				width:600px;background:#eee;	
+				font-size: 1.0em;		/* Font Size 			*/
+				font-weight: 600;	    /* Font weight		 	*/
+                font-family: fantasy;   /* Kaind of Font        */
+				line-height: 1em;				
+					}
+
+	/* Location */
+	#location{
+			    position: relative;
+			    margin: 10px 20px 10px 5px;
+			    padding: 8px 8px 8px 25px;
+                width: 100px;
+                color: #fff;			/* Text Color			*/
+			    background: #B92A2C;	/* Background Color 	*/
+			    font-size: 0.8em;		/* Font Size 			*/
+			    font-weight: normal;    /* Font weight		 	*/
+                font-family: fantasy;   /* Kaind of Font        */
+                line-height: 0.8em;
+			    border-radius:	 22px 0 0 22px;
+			    }
+	#loacation::before{
+							content: "";
+							position: absolute;
+							background: #ffe9a9;			/* One Point of Circle */
+							top: 50%;
+							left: 14px;
+							margin-top: -10px;
+							height: 20px;
+							width: 20px;
+							border-radius: 50%;
+							box-shadow: 1px 1px 1px #777 inset;
+						}
+	#location::after{
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 0px;
+						height: 0px;
+						width: 0;
+						border: 12px solid #B92A2C;	/* Color of Ribon */
+						border-right-color: transparent;
+					    }
+
+    /* SideContents */
+    #side-bar{
+			    margin: 10px 20px 10px 5px;
+                }
+
+    #under-bar{
+                float: left;
+                height: 30px;
+                border: 4px solid #82636b;
+                border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+                background: #eee;
+                }
+
+/*	#side-bar{float:right;
+				border:4px solid #82636b;
+				border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+				height:200px;
+				width:200px;background:#eee;
+				}
+*/
+
