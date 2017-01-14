@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "name": "JS_game",
+=======
   "name": "20161207",
+>>>>>>> 6606ca236bfb2e8efce17c5610a92c5b104e3fd9
   "version": "1.0.0",
   "description": "",
   "main": "Gruntfile.js",
