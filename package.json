@@ -1,7 +1,7 @@
 {
   "name": "JS_game",
   "version": "1.0.0",
-  "description": "",
+  "description": "2016/11/30",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jasmine": "^1.1.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "qunitjs": "^2.1.1"
+  },
+  "dependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0"
   }
