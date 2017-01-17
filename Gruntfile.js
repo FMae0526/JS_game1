@@ -1,5 +1,6 @@
 module.exports = function(grunt){
     // Setting Grunt
+    require('time-grunt')(grunt);
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         qunit: {
@@ -8,7 +9,10 @@ module.exports = function(grunt){
         watch: {
             files: [
                 "Gruntfile.js",
+                "*.html",
+                "layout/*.css",
                 "logic/*.js",
+                "spec/*.js",
                 "test/*.js",
                 "test/*.html",
             ],
@@ -26,7 +30,7 @@ module.exports = function(grunt){
 
     // Jasmine
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.registerTask('default', ['jasmine', 'qunit']);
+    grunt.registerTask('default', ['jasmine', 'qunit','uglify']);
 
     // Qunit
     // grunt.registerTask("test", ["qunit"]);
