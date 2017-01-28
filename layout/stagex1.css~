@@ -1,62 +1,49 @@
 	/* body */
 	 body{
-			    background-color: #c1d8ac;
+			    background-color: #000000;
 		    }
-// b9d080,c8d5bb,c1d8ac,0d0015,192f60,543f32,554738,433d3c,302833
+	
 
 	/* h3 */
-//	h3{
-//			    position: relative;
-//			    padding: 0 1em;
-//			    height: 35px;
-//			    line-height: 35px;
-//			    color: #fff;			/* Text Color			*/
-//			    background: #B92A2C;	/* Background Color 	*/
-//			    font-size: 1.0em;		/* Font Size 			*/
-//			    font-weight: bold;	    /* Font weight		 	*/
-//                font-style: oblique;    /* Font Style           */
-//                font-family: fantasy;   /* Kaind of Font        */
-//		}
-//	h3:before,
-//	h3:after{
-//				content: '';
-//				position: absolute;
-//				}
-//	h3:before{
-//				top: 100%;
-//				left: 0;
-//				border-width: 0 15px 15px 0;
-//				border-color: transparent;
-//				border-right-color: #808080;		/* Color of Return */
-//				}
-//	h3:after{
-//				top: -8;
-//				right: 0;
-//				z-index: 2;
-//				border-width: 25px 20px;
-//				border-style: solid;
-//				border-color: transparent;
-//				border-right-color: #000;
-//			    }
+	h3{
+			    position: relative;
+			    padding: 0 1em;
+			    height: 35px;
+			    line-height: 35px;
+			    color: #fff;			/* Text Color			*/
+			    background: #B92A2C;	/* Background Color 	*/
+			    font-size: 1.0em;		/* Font Size 			*/
+			    font-weight: bold;	    /* Font weight		 	*/
+                font-style: oblique;    /* FOnt Style           */
+                font-family: fantasy;   /* Kaind of Font        */
+		}
+	h3:before,
+	h3:after{
+				content: '';
+				position: absolute;
+				}
+	h3:before{
+				top: 100%;
+				left: 0;
+				border-width: 0 15px 15px 0;
+				border-color: transparent;
+				border-right-color: #808080;		/* Color of Return */
+				}
+	h3:after{
+				top: -8;
+				right: 0;
+				z-index: 2;
+				border-width: 25px 20px;
+				border-style: solid;
+				border-color: transparent;
+				border-right-color: #000;
+			    }
 
     /* MainContents */
+	#main{
+                float:left;
+		    }
 
-    #canvas-container{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        padding-top: 56.25%;
-    }
-
-    #stage{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    
-    }
 
 	/* Commentarea */
 	#commentarea{
@@ -66,14 +53,12 @@
 				color: #000;			/* Text Color			*/
 				border:4px solid #82636b;
 				border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
-				height: 100px;
-				width: 100%;
-                background:#eee;	
+				height:40px;
+				width:600px;background:#eee;	
 				font-size: 1.0em;		/* Font Size 			*/
 				font-weight: 600;	    /* Font weight		 	*/
                 font-family: fantasy;   /* Kaind of Font        */
-				line-height: 1em;
-                overflow:scroll;
+				line-height: 1em;				
 					}
 
 	/* Location */
@@ -112,4 +97,25 @@
 						border: 12px solid #B92A2C;	/* Color of Ribon */
 						border-right-color: transparent;
 					    }
+
+    /* SideContents */
+    #side-bar{
+			    margin: 10px 20px 10px 5px;
+                }
+
+    #under-bar{
+                float: left;
+                height: 30px;
+                border: 4px solid #82636b;
+                border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+                background: #eee;
+                }
+
+/*	#side-bar{float:right;
+				border:4px solid #82636b;
+				border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+				height:200px;
+				width:200px;background:#eee;
+				}
+*/
 
