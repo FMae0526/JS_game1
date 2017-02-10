@@ -1,9 +1,19 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+      <!--CSSofBootStrap-->
+      <link rel="stylesheet" href="layout/bootstrap.min.css">
+      <!--CSSofOriginal-->
 	  <link rel="stylesheet" href="layout/stagex1.css" type="text/css">
+      <!--JQuery-->
+      <script src="logic/jquery-3.1.1.min.js"></script>
+      <!--Tether-->
+      <script src="logic/tether.js"></script>
+      <!--JSofBootStrap-->
+      <script src="logic/bootstrap.min.js"></script>
   <title>SampleLoveLive?</title>
-
 </head>
 
 <body onload="init_param()">
@@ -11,25 +21,45 @@
 
     <!-- <h3>脱出!!</h3> -->
     <!--MainContents-->
-    <div id="main">
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div id="canvas-container">
+                    <!--Stage-->
+                    <canvas id="stage" width="640" height="480"></canvas>
+                </div>
+            </div>
 
-        <!--Stage-->
-        <canvas id="stage" width="640" height="480"></canvas>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <!--Comment-->
+                <div id="commentarea">Enterを押して下さい。</div>
 
+                <!--Locale-->
+                <div id="location">stage4</div>
+                <!--MoveKey-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table-hover">
+                                <tr><td>
+                                        <td><button type="button" class="btn btn-success" onclick="u()">↑</button></td>
+                                        <td><button type="button" class="btn btn-success" onclick="l()">←</button></td>
+                                        <td><button type="button" class="btn btn-success" onclick="r()">→</button></td>
+                                        <td><button type="button" class="btn btn-success" onclick="d()">↓</button></td>
+                                        <td><button type="button" class="btn btn-warning" onclick="Enter()">Eenter</button></td>
+                                </td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--StageImage-->
+                <img id="imgMapchip" src="img/drawsample00mapchipxxx03_sub1.png" style="display:none" class="img-responsive" alt="Responsive image" />
+            </div>
+        </section>
+        <!--MainContents Finish-->
 
-    <!--Comment-->
-    <div id="commentarea"></div>
-    <!--Locale-->
-	<div id="location"></div>
+    <!--Adsense-->
 
-    <!--StageImage-->
-    <img id="imgMapchip" src="img/mapchipxxx1110.png" style="display:none" />
-
-	</div>
-    <!--MainContents Finish-->
-
-    <!--SideContents-->
-	<div id="side-bar">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- AdSense3 -->
 	<ins class="adsbygoogle"
@@ -41,16 +71,5 @@
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 
-    <!--MoveKey-->
-    <table>
-
-        <tr><td></td><td><button onclick="u()">U</button></td><td></td></tr>
-        <tr><td><button onclick="l()">L</button></td><td></td>
-            <td><button onclick="r()">R</button></td></tr>
-        <tr><td></td><td><button onclick="d()">D</button></td><td></td></tr>
-    </table>
-	</div>
-    <!--SideContents Finish-->
 </body>
-</html> 
-
+</html>
