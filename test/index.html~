@@ -10,11 +10,9 @@
     <div id="qunit-fixture"><div>
             <!-- Src Code -->
             <script src="../logic/stage_1.js"></script>
-            <script src="../logic/sample.js"></script>
 
             <script src="../node_modules/qunitjs/qunit/qunit.js"></script>
             <!-- Test Code -->
             <script src="./stage_1.test.js"></script>
-           <script src="./sample.test.js"></script>
 </body>
 </html>
