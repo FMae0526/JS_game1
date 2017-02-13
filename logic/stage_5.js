@@ -27,7 +27,8 @@
 	var ex2 = 10, ey2 = 5;			// Enemy2 First Locale
 	var TimerIDRin;					// Timer ID for Rin Action 
 	var TimerID1;					// Timer ID for Enemy1 Action 
-	var TimerID2;					// Timer ID for Enemy2 Action 
+	var TimerID2;					// Timer ID for Enemy2 Action
+    var event_key; 
 
 	/* ItemName & State */
 	/* 0:False 1:True	  */
@@ -122,6 +123,8 @@
             {
                 document.getElementById("commentarea").innerHTML = "Game Clear!!" + "<br>";
                 sessionStorage.removeItem('Key1');
+
+					event_key = 1;
             }
             if(((dy0 == 12) && (dx0 == 0)) || ((dy0 == 13) && (dx0 == 0)))      // Change1
             {
@@ -129,6 +132,11 @@
             }
             if(((dy0 == 0) && (dx0 == 1)) || ((dy0 == 0) && (dx0 == 2)))         // Change2
             {
+					if(event_key == 1)
+					{
+						location.assign("yoshiko1.html");
+						return;
+					}
                 location.assign("stage_4.html");
             }
 			px = dx0;									// Change Now
