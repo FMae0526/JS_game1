@@ -17,7 +17,7 @@
 </head>
 
 <body onload="init_param()">
-<script src="logic/stage_1.js"></script>
+<script src="logic/stage_3.js"></script>
 
     <!-- <h3>脱出!!</h3> -->
     <!--MainContents-->
@@ -35,7 +35,7 @@
                 <div id="commentarea">Enterを押して下さい。</div>
 
                 <!--Locale-->
-                <div id="location">stage1</div>
+                <div id="location">stage3</div>
                 <!--MoveKey-->
                 <div class="container-fluid">
                     <div class="row">
@@ -46,7 +46,7 @@
                                         <td><button type="button" class="btn btn-success" onclick="l()">←</button></td>
                                         <td><button type="button" class="btn btn-success" onclick="r()">→</button></td>
                                         <td><button type="button" class="btn btn-success" onclick="d()">↓</button></td>
-                                        <td><button type="button" class="btn btn-warning" onclick="Enter()">Enter</button></td>
+                                        <td><button type="button" class="btn btn-warning" onclick="Enter()">Eenter</button></td>
                                 </td></tr>
                             </table>
                         </div>
